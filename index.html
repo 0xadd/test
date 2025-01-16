@@ -4,34 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>操作系统检测</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        #mac, #win {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-
-    <div id="mac" style="display: none;">你正在使用 Mac 操作系统</div>
-    <div id="win" style="display: none;">你正在使用 Windows 操作系统</div>
 
     <script>
         // 检测操作系统
         const userAgent = navigator.userAgent.toLowerCase();
         if (userAgent.indexOf("mac") !== -1) {
-            // 如果是Mac
-            document.getElementById("mac").style.display = "block";
+            // 如果是Mac，重定向到 mac.html
+            window.location.href = "mac.html";
         } else if (userAgent.indexOf("win") !== -1) {
-            // 如果是Windows
-            document.getElementById("win").style.display = "block";
+            // 如果是Windows，重定向到 win.html
+            window.location.href = "win.html";
         } else {
-            // 其他操作系统
+            // 如果不是Mac或Windows，提示用户
             alert("无法识别你的操作系统！");
         }
     </script>
