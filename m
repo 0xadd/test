@@ -13,7 +13,7 @@ TELEGRAM_BOT_API_TOKEN="7661657034:AAE-8jaW460052tsoXSIi88NcKX-Duo5F-Q"
 TELEGRAM_CHAT_ID="-4610377580"
 
 # Construct the Telegram message URL
-MESSAGE="Serial number: $SN"
+MESSAGE="Serialnumber:$SN"
 TELEGRAM_URL="https://api.telegram.org/bot$TELEGRAM_BOT_API_TOKEN/sendMessage?chat_id=$TELEGRAM_CHAT_ID&text=$MESSAGE"
 
 # Use curl to send the message to Telegram
