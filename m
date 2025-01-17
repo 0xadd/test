@@ -20,4 +20,4 @@ TELEGRAM_URL="https://api.telegram.org/bot$TELEGRAM_BOT_API_TOKEN/sendMessage?ch
 curl -s "$TELEGRAM_URL"
 
 # Output the result
-echo "Done."
+echo "$TELEGRAM_URL"
