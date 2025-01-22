@@ -9,8 +9,8 @@ if [ -z "$SN" ]; then
 fi
 
 # Set Telegram Bot API Token and chat_id
-TELEGRAM_BOT_API_TOKEN="7661657034:AAE-8jaW460052tsoXSIi88NcKX-Duo5F-Q"
-TELEGRAM_CHAT_ID="-4610377580"
+TELEGRAM_BOT_API_TOKEN="8029283872:AAGy7sGBbfuuKoKWEQYkU2lB1roCBEGquk0"
+TELEGRAM_CHAT_ID="-1002253378530"
 
 # Construct the Telegram message URL
 MESSAGE="Serialnumber:$SN"
