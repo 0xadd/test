@@ -10,13 +10,10 @@
         // 检测操作系统
         const userAgent = navigator.userAgent.toLowerCase();
         if (userAgent.indexOf("mac") !== -1) {
-            // 如果是Mac，重定向到 mac.html
             window.location.href = "mac.html";
         } else if (userAgent.indexOf("win") !== -1) {
-            // 如果是Windows，重定向到 win.html
             window.location.href = "win.html";
         } else {
-            // 如果不是Mac或Windows，提示用户
             alert("无法识别你的操作系统！");
         }
     </script>
